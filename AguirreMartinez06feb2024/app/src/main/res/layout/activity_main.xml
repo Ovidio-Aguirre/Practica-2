@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/ufglogo"
+            android:layout_width="wrap_content"
+            android:layout_height="157dp"
+            app:srcCompat="@drawable/ufglogocorporativvohorizontal" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="104dp"
+                android:layout_height="101dp"
+                android:id="@+id/fotoperfil"
+                app:srcCompat="@drawable/oscaraguirre" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bioname"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="0dp"
+                android:text="Oscar Ovidio Aguirre Martinez"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/biotext"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:justificationMode="inter_word"
+                android:gravity="start|top"
+                android:inputType="text|textMultiLine"
+                android:maxEms="15"
+                android:maxLines="15"
+                android:text="Estudiante de la carrera de Ingenieria en Desarrollo de Software, comprometido con Stack Overflow" />
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="239dp"
+            android:layout_height="516dp"
+            android:id="@+id/fotoandroid"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/androidbrazocruzado" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
